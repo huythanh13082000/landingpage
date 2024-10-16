@@ -13,20 +13,24 @@ const Section5 = () => {
         <div className='w-[750px] left-[251px] top-[20px] absolute text-center'>
           <span className='text-[#bdbdbd] text-2xl font-semibold leading-[28.80px]'>
             The very picture of
-          </span>&nbsp;
+          </span>
+          &nbsp;
           <span className='text-[#212121] text-2xl font-semibold leading-[28.80px]'>
             health
           </span>
           <span className='text-[#bdbdbd] text-2xl font-semibold leading-[28.80px]'>
             . Moodi the
-          </span>&nbsp;
+          </span>
+          &nbsp;
           <span className='text-[#212121] text-2xl font-semibold leading-[28.80px]'>
             Health
-          </span>&nbsp;
+          </span>
+          &nbsp;
           <span className='text-[#bdbdbd] text-2xl font-semibold leading-[28.80px]'>
             app on Mood to give you important insights on your sleep, activity,
             heart rate, menstrual cycle, and
-          </span>&nbsp;
+          </span>
+          &nbsp;
           <span className='text-[#212121] text-2xl font-semibold leading-[28.80px]'>
             mental health
           </span>
@@ -49,12 +53,15 @@ const Section5 = () => {
         <div className='w-[856px] h-[89px] left-[255px] top-[802px] absolute bg-white rounded-full blur-[39.10px]' />
       </div>
 
-      <div
-        // style={{boxShadow: '#0c4848 0px 22px 70px 4px'}}
+      <motion.div
+        initial={{opacity: 0, x: 0}}
+        whileInView={{opacity: 1, x: 0}}
+        transition={{duration: 0.5}}
+        id='bluetoothIcon'
         className='px-6 py-4 bg-[#0c4848] rounded-full border border-white/50 backdrop-blur-[24.60px] justify-center items-center gap-2.5 inline-flex '
       >
         <div className='w-9 h-9 justify-center items-center flex'>
-          <motion.div id='bluetoothIcon' className='w-9 h-9 relative'>
+          <div className='w-9 h-9 relative'>
             <Image
               src={bluetoothIcon}
               alt='bluetoothIcon'
@@ -62,12 +69,12 @@ const Section5 = () => {
               height={36}
               className='max-w-[36px]'
             />
-          </motion.div>
+          </div>
         </div>
         <div className='text-white text-2xl font-bold leading-normal'>
           Connect bluetooth
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

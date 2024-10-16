@@ -26,7 +26,7 @@ const Section7 = () => {
         <div className='left-[428px] top-[127px] absolute text-[#313131] text-[82px] font-black leading-[82px]'>
           Easier. Higher.
         </div>
-        <div className='w-[119px] h-[375px] left-[425px] top-[714px] absolute bg-[#959595]/30 rounded-full blur-[50px]' />
+
         <div className='left-[624px] top-[363px] absolute flex-col justify-start items-start gap-6 inline-flex'>
           <div className='text-slate-900 text-[32px] font-semibold uppercase leading-9'>
             Controller
@@ -58,10 +58,11 @@ const Section7 = () => {
           </div>
         </div>
         <Image
-          className='w-[92.28px] h-[413.66px] left-[430.28px] top-[300px] absolute origin-top-left'
+          className='w-[92.28px] h-[413.66px] left-[430.28px] top-[300px] absolute origin-top-left '
           src={battery}
           alt=''
         />
+        <div className='w-[119px] h-[375px] left-[425px] top-[314px] absolute bg-[#959595]/30 rounded-full blur-[50px]' />
       </div>
     </div>
   )
