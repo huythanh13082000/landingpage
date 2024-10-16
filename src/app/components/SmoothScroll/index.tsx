@@ -6,7 +6,7 @@ import LocomotiveScroll from 'locomotive-scroll'
 import 'locomotive-scroll/src/locomotive-scroll.scss'
 
 const SmoothScroll: React.FC<{children: React.ReactNode}> = ({children}) => {
-  const scrollRef = useRef<any>(null)
+  const scrollRef = useRef<any>()
 
   useEffect(() => {
     let locoScroll: any

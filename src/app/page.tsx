@@ -5,8 +5,9 @@ import Section4 from './components/Section4'
 import Section5 from './components/Section5'
 import Section6 from './components/Section6'
 import Section7 from './components/Section7'
-import SmoothScroll from './components/SmoothScroll'
+import dynamic from 'next/dynamic';
 
+const SmoothScroll = dynamic(() => import('./components/SmoothScroll'), { ssr: false });
 export default function Home() {
   return (
     <div className='overflow-x-hidden'>
