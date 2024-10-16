@@ -53,10 +53,52 @@ const HeroSection = () => {
           alt=''
         />
       </motion.div>
-      <motion.div className='w-[750px] left-[345px] top-[558px] absolute text-center text-[#bdbdbd] text-2xl leading-[28.80px]'>
-        The very picture of health. Moodi the Health app on Mood to give you
-        important insights on your sleep, activity, heart rate, menstrual cycle,
-        and mental health.
+      <motion.div
+        // initial={{opacity: 0, y: 20}}
+        // animate={{opacity: 1, y: 0}}
+        // transition={{
+        //   delay: 1.25,
+        //   duration: 1,
+        //   ease: 'easeInOut',
+        // }}
+        className='w-[750px] left-[345px] top-[558px] absolute text-center text-[#bdbdbd] text-2xl leading-[28.80px]'
+      >
+        <motion.span
+          initial={{opacity: 0, y: 20}}
+          animate={{opacity: 1, y: 0}}
+          transition={{
+            delay: 1.35,
+            duration: 1,
+            ease: 'easeInOut',
+          }}
+        >
+          The very picture of health. Moodi the Health app on Mood to give you
+        </motion.span>
+        <br />
+        <motion.span
+          initial={{opacity: 0, y: 20}}
+          animate={{opacity: 1, y: 0}}
+          transition={{
+            delay: 1.5,
+            duration: 1,
+            ease: 'easeInOut',
+          }}
+        >
+          important insights on your sleep, activity, heart rate, menstrual
+          cycle,
+        </motion.span>
+        <br />
+        <motion.span
+          initial={{opacity: 0, y: 20}}
+          animate={{opacity: 1, y: 0}}
+          transition={{
+            delay: 1.8,
+            duration: 1,
+            ease: 'easeInOut',
+          }}
+        >
+          and mental health.
+        </motion.span>
       </motion.div>
     </motion.div>
   )
